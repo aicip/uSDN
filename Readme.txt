@@ -1,4 +1,4 @@
-This is a demo code for 'Unsupervised sparse Dirichlet-net for hyperspectral image super-resolution', the code is for research purpose only, all rights reserved. 
+This is a demo code for 'Unsupervised sparse Dirichlet-net for hyperspectral image super-resolution'. The code is for research purpose only. All rights reserved. 
 
 Contact information 
 Ying Qu: yqu3@vols.utk.edu
@@ -15,7 +15,7 @@ To run the code, please run 'uSDN.py' in Tensorflow.
 
 Please cite the following paper. 
 
-Qu, Ying, Hairong Qi, and Chiman Kwan. "Unsupervised sparse Dirichlet-net for hyperspectral image super-resolution." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR). 2018.
+Ying Qu, Hairong Qi, and Chiman Kwan. "Unsupervised sparse Dirichlet-net for hyperspectral image super-resolution." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR). 2018.
 
 @article{qu2018unsupervised,
   title={Unsupervised sparse Dirichlet-net for hyperspectral image super-resolution},
