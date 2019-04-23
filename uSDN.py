@@ -26,15 +26,16 @@ def main():
     initp = False
     initp = True
     lr_rate = 0.001
-    p_rate = 0.0005
+    p_rate = 0.00001
     maxiter = 500000
     tol = 1.5
-    vol_r = 0.01
+    vol_r = 0.0001
     sp_r_lsi = 0.001
     sp_r_msi = 0.0001
+
     num = 12
     ly = 3
-    init_num = 10000
+    init_num = 15000
 
     nLRlevel = [ly,ly,ly,ly,ly]
     nHRlevel = [ly,ly,ly,ly,ly]

@@ -419,8 +419,7 @@ class betapan(object):
                             self.initp = False
 
                 _, msi_loss = self.sess.run([opt_hrmsi,hrmsi_loss], feed_dict=feed_dict)
-                _, angleloss = self.sess.run([opt_angle, angle_loss], feed_dict={self.hr_msi: self.input_lr_msi,
-                                                                                 self.hr_msi_h: self.input_hr_msi_h})
+
                 self.initprate = self.initprate * rate_decay
                 self.sp_r_msi = self.sp_r_msi * rate_decay
 
@@ -441,7 +440,8 @@ class betapan(object):
                     results_file.write(results + "\n\n")
                     results_file.flush()
 
-
+                    _, angleloss = self.sess.run([opt_angle, angle_loss], feed_dict={self.hr_msi: self.input_lr_msi,
+                                                                                     self.hr_msi_h: self.input_hr_msi_h})
                     angle = "Angle of the pan: {:.12f}"
                     angle = angle.format(angleloss)
                     print(angle)
